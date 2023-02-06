@@ -1,10 +1,15 @@
+// Variables
+
+$primary-color: #0597F2;
+$secondary-color: #D96277; //#0FBFBF - turkos
+
+// Global
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-// Global
 
 h1, h2, h3 {
   font-family: eurostile, sans-serif;
@@ -29,6 +34,12 @@ button {
 
 header {
   height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+
 
   .hamburger-menu {
     width: 50px;
@@ -42,8 +53,9 @@ header {
     span {
       display: block; 
       width: 35px;
-      height: 3px;
+      height: 5px;
       background-color: black;
+      border-radius: 50px;
 
       &:nth-child(1) {
 
@@ -62,12 +74,14 @@ header {
 
 // Welcome
 
-.welcome {
+.hero {
+  height: 700px;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
+  color: rgb(0, 0, 85);
 
   p {
     text-align: center;
@@ -77,7 +91,7 @@ header {
     position: relative;
     width: 200px;
     height: 200px;
-    top: 75px;
+    margin-top: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,6 +143,14 @@ header {
       &:nth-child(10) {
         bottom: -50%;
       }
+
+      &:nth-child(11) {
+        width: 50px;
+      }
     }
   }
+}
+
+.about {
+  background-color: $primary-color;
 }
