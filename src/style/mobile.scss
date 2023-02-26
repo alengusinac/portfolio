@@ -151,6 +151,35 @@ header {
   }
 }
 
-.about {
-  background-color: $primary-color;
+.projects {
+  background: linear-gradient($primary-color, white 90%);
+  border-radius: 20px 20px 0 0;
+  padding-top: 30px;
+  height: 500px;
+
+  h2, p {
+    color: white;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  p {
+    margin-top: 10px;
+  }
+  
+  .project-flex {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .project {
+      width: 200px;
+      height: 125px;
+      background-color: aqua;
+      border-radius: 20px;
+    }
+  }
+  
 }
