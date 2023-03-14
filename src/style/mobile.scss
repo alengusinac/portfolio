@@ -194,22 +194,30 @@ header {
     flex-direction: column;
     align-items: center;
     .skill {
-      width: 325px;
-      height: 400px;
+      max-width: 375px;
+      height: 550px;
       display: flex;
       flex-direction: column;
       align-items: center;
       background-color: white;
       outline: 1px solid $secondary-color;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
 
       &:nth-child(1) {
         border-radius: 10px 10px 0 0;
       }
 
+      &:nth-child(3) {
+        height: 375px;
+      }
+
       h3 {
-        margin-top: 40px;
+        margin-top: 30px;
         text-align: center;
+      }
+
+      p {
+        color: $primary-font-color;
       }
 
       .skills-languages, .skills-devtools, .skills-future {
@@ -217,23 +225,26 @@ header {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
+        
         h5 {
           text-align: center;
           width: 100%;
         }
-
+        
         div {
-          font-size: 0.5rem;
-          text-align: center;
-        }
-      }
+          flex-basis: 17%;
+          font-size: 0.7rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-      img {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin: 5px;
+          img {
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 8px;
+          }
+        }
       }
     }
   }
@@ -321,7 +332,7 @@ header {
 }
 
 footer {
-  height: 500px;
+  height: 400px;
   margin-top: 100px;
   background-color: $primary-color;
 }
