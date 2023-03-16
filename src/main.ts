@@ -9,5 +9,3 @@ function openMenu() {
 }
 
 menuBtn?.addEventListener('click', openMenu);
-
-console.log('Is this site working???');
