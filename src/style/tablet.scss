@@ -30,6 +30,13 @@
         &:nth-child(3) {
           height: 700px;
           border-radius: 0 10px 0 0;
+          .skills-languages {
+            margin-top: 70px;
+
+            div {
+              flex-basis: 25%;
+            }
+          }
         }
       }
     }
