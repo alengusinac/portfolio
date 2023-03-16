@@ -14,4 +14,24 @@
       display: none;
     }
   }
+
+  .skills {
+    .skills-flex {
+      flex-direction: row;
+      justify-content: center;
+      .skill {
+        height: 700px;
+        flex-basis: 30%;
+
+        &:nth-child(1) {
+          border-radius: 10px 0 0 0;
+        }
+
+        &:nth-child(3) {
+          height: 700px;
+          border-radius: 0 10px 0 0;
+        }
+      }
+    }
+  }
 }
