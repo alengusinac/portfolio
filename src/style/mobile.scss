@@ -32,26 +32,34 @@ h1 {
   color: $primary-font-color;
 }
 
-button {
-  width: 150px;
-  height: 50px;
-  border: 1px solid $primary-font-color;
-  border-radius: 50px;
-  background-color: white;
-  color: $secondary-color;
-  text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.478);
-  cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
-  transition: transform .2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  &:active {
-    box-shadow: none;
+.menu-options {
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 1px solid $primary-font-color;
+    border-radius: 50px;
+    background-color: white;
+    color: $secondary-color;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.478);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+    transition: transform .2s ease-in-out;
+    text-decoration: none;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  
+    &:active {
+      box-shadow: none;
+    }
   }
 }
+
+
 
 // Header
 
@@ -82,13 +90,12 @@ header {
     opacity: 0;
     transition: all .3s ease-in-out;
 
-    button:nth-child(1) {
+    a:nth-child(1) {
       border: 1px solid $secondary-color;
-      a {
-        color: $primary-font-color;
-        text-decoration: none;
-        text-shadow: none;
-      }
+      color: $primary-font-color;
+      text-decoration: none;
+      text-shadow: none;
+      margin-right: 10px;
     }
 
     &.open-mobile {
@@ -402,14 +409,17 @@ footer {
   align-items: center;
   text-align: center;
 
-  button:nth-child(1) {
-    border: 1px solid $secondary-color;
-    a {
+  .menu-options {
+    a:nth-child(1) {
+      border: 1px solid $secondary-color;
       color: $primary-font-color;
       text-decoration: none;
       text-shadow: none;
+      margin-bottom: 10px;
     }
   }
+
+  
 
   .socials {
     font-size: 2.5rem;
