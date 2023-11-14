@@ -5,6 +5,10 @@
       top: 0;
       opacity: 1;
 
+      &:first-child{
+        margin-right: 20px;
+      }
+
       button {
         margin: 10px;
       }
